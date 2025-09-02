@@ -134,7 +134,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link href='#contact' className='font-ovo' onClick={closeMenu}>
+            <Link href='#contact' className={`${figtree.className}`} onClick={closeMenu}>
               Contact Me
             </Link>
           </li>

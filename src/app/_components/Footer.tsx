@@ -26,7 +26,7 @@ export default function Footer() {
       {/* Bottom section */}
       <div className='py-12 border-t border-gray-400 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left mx-[5%]'>
         <p className='text-sm sm:text-base'>
-          © {new Date().getFullYear()} MyPortfolio. All rights reserved.
+          © {new Date().getFullYear()} Joy Sarkar. All rights reserved.
         </p>
 
         {/* Social Links */}

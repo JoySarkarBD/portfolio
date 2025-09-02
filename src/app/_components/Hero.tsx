@@ -66,7 +66,7 @@ export default function Hero() {
   return (
     <div className='dark:bg-gradient-to-b from-gray-900 to-black/80'>
       <motion.main
-        className='w-11/12 max-w-3xl text-center mx-auto flex flex-col items-center justify-center gap-4 h-screen'
+        className='w-11/12 max-w-3xl text-center mx-auto flex flex-col items-center justify-center gap-4 min-h-screen'
         variants={container}
         initial='hidden'
         animate='visible'>
@@ -89,7 +89,7 @@ export default function Hero() {
         </motion.h3>
 
         <motion.h1
-          className={`text-3xl sm:text-6xl lg:text-[66px] font-bold leading-[68px] ${figtree.className}`}
+          className={`text-3xl sm:text-6xl lg:text-[66px] font-bold leading-[38px] md:leading-[68px] ${figtree.className}`}
           variants={fadeUp}>
           Full Stack Web Developer Based in Bangladesh.
         </motion.h1>
@@ -104,7 +104,7 @@ export default function Hero() {
         </motion.p>
 
         <motion.div
-          className='flex flex-col sm:flex-row items-center gap-4 mt-4'
+          className='flex  items-center gap-2 md:gap-4 mt-4'
           variants={fadeUp}>
           <motion.div whileHover={{ y: -2 }} whileTap={{ scale: 0.98 }}>
             <Link

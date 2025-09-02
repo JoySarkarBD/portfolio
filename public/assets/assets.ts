@@ -14,7 +14,7 @@ import graphics_icon from "./graphics-icon.png";
 import hand_icon from "./hand-icon.png";
 import header_bg_color from "./header-bg-color.png";
 import joy_sarkar_logo_dark from "./joy-sarkar-logo-dark.svg";
-import profile_img from "./joy_sarkar.jpg";
+import profile_img from "./joy_sarkar.jpeg";
 import logo from "./logo.png";
 import logo_dark from "./logo_dark.png";
 import mail_icon from "./mail_icon.png";
@@ -75,7 +75,7 @@ export const assets = {
   send_icon,
   right_arrow_bold,
   right_arrow_bold_dark,
-  joy_sarkar_logo_dark
+  joy_sarkar_logo_dark,
 };
 
 export const workData = [

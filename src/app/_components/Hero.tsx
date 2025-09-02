@@ -64,70 +64,68 @@ export default function Hero() {
   };
 
   return (
-    <div className="dark:bg-gradient-to-b from-gray-900 to-black/80">
+    <div className='dark:bg-gradient-to-b from-gray-900 to-black/80'>
       <motion.main
-        className="w-11/12 max-w-3xl text-center mx-auto flex flex-col items-center justify-center gap-4 h-screen"
+        className='w-11/12 max-w-3xl text-center mx-auto flex flex-col items-center justify-center gap-4 h-screen'
         variants={container}
-        initial="hidden"
-        animate="visible"
-      >
+        initial='hidden'
+        animate='visible'>
         <motion.div variants={scaleIn}>
           <Image
             src={assets.profile_img}
-            alt="Profile Image"
-            className="rounded-full w-32 shadow-lg"
+            alt='Profile Image'
+            className='rounded-full w-32 shadow-lg'
             priority
           />
         </motion.div>
 
         <motion.h3
           className={`flex items-center justify-center gap-2 text-2xl ${unbounded.className}`}
-          variants={fadeUp}
-        >
+          variants={fadeUp}>
           Hi! I&apos;m Joy Sarkar{" "}
           <motion.span variants={wave} style={{ display: "inline-flex" }}>
-            <Image src={assets.hand_icon} alt="Hand Icon" className="w-6" />
+            <Image src={assets.hand_icon} alt='Hand Icon' className='w-6' />
           </motion.span>
         </motion.h3>
 
         <motion.h1
           className={`text-3xl sm:text-6xl lg:text-[66px] font-bold leading-[68px] ${figtree.className}`}
-          variants={fadeUp}
-        >
+          variants={fadeUp}>
           Full Stack Web Developer Based in Bangladesh.
         </motion.h1>
 
         <motion.p
           className={`max-w-2xl mx-auto text-xl text-gray-700 dark:text-gray-300 ${figtree.className}`}
-          variants={fadeUp}
-        >
+          variants={fadeUp}>
           I am a passionate web developer with expertise in building dynamic and
-          responsive web applications. With 5 years of experience in the industry,
-          I have honed my skills in various technologies and frameworks.
+          responsive web applications. With 5 years of experience in the
+          industry, I have honed my skills in various technologies and
+          frameworks.
         </motion.p>
 
         <motion.div
-          className="flex flex-col sm:flex-row items-center gap-4 mt-4"
-          variants={fadeUp}
-        >
+          className='flex flex-col sm:flex-row items-center gap-4 mt-4'
+          variants={fadeUp}>
           <motion.div whileHover={{ y: -2 }} whileTap={{ scale: 0.98 }}>
             <Link
-              href="#contact"
-              className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-black text-white shadow-sm"
-            >
+              href='#contact'
+              className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-black text-white shadow-sm'>
               Contact{" "}
-              <Image src={assets.right_arrow_white} alt="Contact" className="w-3" />
+              <Image
+                src={assets.right_arrow_white}
+                alt='Contact'
+                className='w-3'
+              />
             </Link>
           </motion.div>
 
           <motion.div whileHover={{ y: -2 }} whileTap={{ scale: 0.98 }}>
             <Link
-              href="/assets/public/sample-resume.pdf"
-              className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white/80 dark:bg-white/5 backdrop-blur"
-              download
-            >
+              href='/assets/public/sample-resume.pdf'
+              className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white/80 dark:bg-white/5 backdrop-blur'
+              download>
               My Resume{" "}
-              <Image src={assets.download_icon} alt="My Resume" className="w-3" />
+              {/* <Image src={assets.download_icon} alt="My Resume" className="w-3" /> */}
             </Link>
           </motion.div>
         </motion.div>

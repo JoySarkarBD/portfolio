@@ -46,8 +46,11 @@ export default function Navbar() {
         <Image src={assets.header_bg_color} alt='BG' className='w-full' />
       </div>
       <nav
-        className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 transition ${isScroll ? "bg-white/70 backdrop-blur-md shadow-sm dark:bg-gradient-to-b from-gray-900 to-black/90" : ""
-          }`}>
+        className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${
+          isScroll
+            ? "bg-white/70 backdrop-blur-md shadow-sm dark:bg-gradient-to-b from-gray-900 to-black/90"
+            : ""
+        }`}>
         {/* Logo */}
         <Link href='#top'>
           <LOGO />
@@ -55,30 +58,43 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <ul
-          className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : "bg-white shadow-sm dark:bg-gradient-to-b from-gray-900 to-black"
-            }`}>
+          className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${
+            isScroll
+              ? ""
+              : "bg-white shadow-sm dark:bg-gradient-to-b from-gray-900 to-black"
+          }`}>
           <li>
-            <Link className={`${figtree.className} text-base font-medium hover:font-semibold transition-all`} href='#top'>
+            <Link
+              className={`${figtree.className} text-base font-medium hover:font-semibold transition-all`}
+              href='#top'>
               Home
             </Link>
           </li>
           <li>
-            <Link className={`${figtree.className} text-base font-medium hover:font-semibold transition-all`} href='#about'>
+            <Link
+              className={`${figtree.className} text-base font-medium hover:font-semibold transition-all`}
+              href='#about'>
               About Me
             </Link>
           </li>
           <li>
-            <Link className={`${figtree.className} text-base font-medium hover:font-semibold transition-all`} href='#services'>
+            <Link
+              className={`${figtree.className} text-base font-medium hover:font-semibold transition-all`}
+              href='#services'>
               Services
             </Link>
           </li>
           <li>
-            <Link className={`${figtree.className} text-base font-medium hover:font-semibold transition-all`} href='#works'>
+            <Link
+              className={`${figtree.className} text-base font-medium hover:font-semibold transition-all`}
+              href='#works'>
               My Works
             </Link>
           </li>
           <li>
-            <Link className={`${figtree.className} text-base font-medium hover:font-semibold transition-all`} href='#contact'>
+            <Link
+              className={`${figtree.className} text-base font-medium hover:font-semibold transition-all`}
+              href='#contact'>
               Contact Me
             </Link>
           </li>
@@ -134,7 +150,10 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link href='#contact' className={`${figtree.className}`} onClick={closeMenu}>
+            <Link
+              href='#contact'
+              className={`${figtree.className}`}
+              onClick={closeMenu}>
               Contact Me
             </Link>
           </li>

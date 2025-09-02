@@ -20,18 +20,6 @@
   background: "#11001F";
 }
 
-.font-ovo {
-  font-family: "Ovo", serif;
-}
-
-.font-outfit {
-  font-family: "Outfit", sans-serif;
-}
-
-* {
-  font-family: Outfit;
-}
-
 @theme inline {
   --font-medimi: var(--font-medmi);
   --radius-sm: calc(var(--radius) - 4px);

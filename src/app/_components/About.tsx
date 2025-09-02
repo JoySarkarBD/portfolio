@@ -66,7 +66,7 @@ export default function About() {
   return (
     <motion.div
       id='about'
-      className='w-full dark:bg-gradient-to-t dark:border-t from-gray-900 to-black/80 px-[12%] py-10 scroll-mt-20'
+      className='w-full dark:bg-gradient-to-t from-gray-900 to-black/80 px-[12%] py-10 scroll-mt-20'
       variants={section}
       initial='hidden'
       whileInView='visible'

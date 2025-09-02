@@ -43,7 +43,11 @@ export default function Navbar() {
   return (
     <>
       <div className='fixed top-0 right-0 w-full -z-19 '>
-        <Image src={assets.header_bg_color} alt='BG' className='w-full' />
+        <Image
+          src={assets.header_bg_color}
+          alt='BG'
+          className='w-full hidden sm:block'
+        />
       </div>
       <nav
         className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${
@@ -114,19 +118,37 @@ export default function Navbar() {
           </Link>
           {/* Mobile Menu Button */}
           <button className='block md:hidden ml-3' onClick={openMenu}>
-            <Image src={assets.menu_black} alt='Menu' className='w-6' />
+            <Image
+              src={assets.menu_black}
+              alt='Menu'
+              className='w-6 dark:hidden'
+            />
+            <Image
+              src={assets.menu_white}
+              alt='Menu'
+              className='w-6 hidden dark:block'
+            />
           </button>
         </div>
 
         {/* Overlay + Mobile Menu */}
         <ul
           ref={sideMenuRef}
-          className='flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500'>
+          className='flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 dark:bg-gradient-to-b from-gray-900 to-black/80'>
           {/* Close Button */}
           <div
             className='absolute right-6 top-6 cursor-pointer'
             onClick={closeMenu}>
-            <Image src={assets.close_black} alt='Close Menu' className='w-5' />
+            <Image
+              src={assets.close_black}
+              alt='Close Menu'
+              className='w-5 dark:hidden'
+            />
+            <Image
+              src={assets.close_white}
+              alt='Close Menu'
+              className='w-5 hidden dark:block'
+            />
           </div>
 
           <li>

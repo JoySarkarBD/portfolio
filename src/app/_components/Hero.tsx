@@ -121,7 +121,7 @@ export default function Hero() {
 
           <motion.div whileHover={{ y: -2 }} whileTap={{ scale: 0.98 }}>
             <Link
-              href='/assets/public/sample-resume.pdf'
+              href='/assets/public/Resume-Of-Joy.pdf'
               className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white/80 dark:bg-white/5 backdrop-blur'
               download>
               My Resume{" "}

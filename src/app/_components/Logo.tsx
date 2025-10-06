@@ -1,4 +1,3 @@
-
 export const LOGO = () => {
   return (
     <div className='block text-xl font-medimi font-bold tracking-wider text-[#1F2937] md:text-[40px] text-[32px] uppercase'>
